@@ -11,8 +11,8 @@ vtSymbol直接使用symbol
 import os,json
 from copy import copy
 
-from ..ctpGateway.vnctpmd import MdApi
-from ..ctpGateway.vnctptd import TdApi
+from vnctpmd import MdApi
+from vnctptd import TdApi
 from ctpDataType import *
 from vtGateway import *
 

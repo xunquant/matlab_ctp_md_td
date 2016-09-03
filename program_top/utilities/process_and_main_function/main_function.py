@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from zmq.eventloop import IOLoop
 
-from business_top.working_instance_loader import load_instances
 from program_top.utilities.environment_and_platform import get_current_environment_pack
 
 def main(start_script_file,running_class_def=None):
@@ -11,7 +10,7 @@ def main(start_script_file,running_class_def=None):
 		current_working_instance=running_class_def(current_environment_pack)
 		#print id(current_working_engine),'这里是主进程'
 
-	local_working_processes=load_instances(current_environment_pack)
+	#local_working_processes=load_instances(current_environment_pack)
 
 	IOLoop.instance().start()
 	pass

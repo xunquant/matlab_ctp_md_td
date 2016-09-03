@@ -1,0 +1,5 @@
+# -*- coding: utf-8 -*-
+
+要安装的库：
+libboost_python
+libboost_thread

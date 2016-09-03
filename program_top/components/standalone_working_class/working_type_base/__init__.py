@@ -2,7 +2,6 @@
 
 from program_top.components.standalone_working_class import standalone_working_class
 
-
 class working_type_base(standalone_working_class):
 	'''
 	def __register_self(self):
@@ -12,7 +11,7 @@ class working_type_base(standalone_working_class):
 	'''
 
 	def __init__(self,environment_pack):
-		super(working_type_base, self).__init__(environment_pack)
+		super(working_type_base, self).__init__()
 		pass
 
 	pass

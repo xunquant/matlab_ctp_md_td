@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+
 class component_base(object):
 	'''
 	组件，非独立占据一个进程的组装配件，组件不具备独立的各种环境变量文件夹，只从request_in成员输入dict指令，它的子类standalone某某才有独立的环境变量，独占一个进程
