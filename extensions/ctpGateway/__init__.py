@@ -11,4 +11,4 @@ current_filename=__file__
 path
 
 pass
-#environ['LD_LIBRARY_PATH']=
+#environ['LD_LIBRARY_PATH']=老子就是不服
