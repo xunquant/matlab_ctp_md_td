@@ -10,11 +10,11 @@ vtSymbol直接使用symbol
 
 import os,json
 from copy import copy
-
 from vnctpmd import MdApi
 from vnctptd import TdApi
 from ctpDataType import *
 from vtGateway import *
+from vtConstant import *
 
 # 以下为一些VT类型和CTP类型的映射字典
 # 价格类型映射

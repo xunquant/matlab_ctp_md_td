@@ -11,7 +11,7 @@ class working_type_base(standalone_working_class):
 	'''
 
 	def __init__(self,environment_pack):
-		super(working_type_base, self).__init__()
+		super(working_type_base, self).__init__(environment_pack)
 		pass
 
 	pass

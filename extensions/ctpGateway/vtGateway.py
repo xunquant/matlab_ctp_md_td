@@ -2,7 +2,7 @@
 
 import time
 
-from eventEngine import *
+#from eventEngine import *
 
 from vtConstant import *
 
