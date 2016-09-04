@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bc55be6-a7d9-48f5-9442-c8f112362e2c" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/试试看新的key" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extensions/__init__.py" afterPath="$PROJECT_DIR$/extensions/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extensions/ctpGateway/__init__.py" afterPath="$PROJECT_DIR$/extensions/ctpGateway/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extensions/ctpGateway/ctpGateway.py" afterPath="$PROJECT_DIR$/extensions/ctpGateway/ctpGateway.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extensions/ctpGateway/vtGateway.py" afterPath="$PROJECT_DIR$/extensions/ctpGateway/vtGateway.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/program_top/components/standalone_working_class/working_type_base/__init__.py" afterPath="$PROJECT_DIR$/program_top/components/standalone_working_class/working_type_base/__init__.py" />
     </list>
     <ignored path="matlab_ctp_md_td.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,11 +38,10 @@
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/extensions/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="384">
+              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
               <folding>
                 <element signature="e#25#46#1" expanded="true" />
-                <element signature="e#208#864#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -207,7 +202,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -442,14 +437,21 @@
       <option name="project" value="LOCAL" />
       <updated>1472945248306</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="将extensions下所有so软链接到程序文件夹，确保可以链接到">
+      <created>1472985251739</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1472985251739</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1442" height="881" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21423538" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21423538" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -485,7 +487,8 @@
     <MESSAGE value="加入CTP接口" />
     <MESSAGE value=" 导入CTPMD模块，还差linux的CTP库没有放进去" />
     <MESSAGE value="外接的插件要加入环境变量才能加载" />
-    <option name="LAST_COMMIT_MESSAGE" value="外接的插件要加入环境变量才能加载" />
+    <MESSAGE value="将extensions下所有so软链接到程序文件夹，确保可以链接到" />
+    <option name="LAST_COMMIT_MESSAGE" value="将extensions下所有so软链接到程序文件夹，确保可以链接到" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -776,6 +779,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -889,11 +893,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/extensions/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="384">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
           <folding>
             <element signature="e#25#46#1" expanded="true" />
-            <element signature="e#208#864#0" expanded="true" />
           </folding>
         </state>
       </provider>
