@@ -1,10 +1,8 @@
-# -*- coding: utf-8 -*-
-
 使用apt或者zypper安装依赖库：
 libboost_python
 libboost_thread
 
-比如：
+比如ubuntu/mint下：
 sudo apt install libboost-python-dev libboost-thread-dev
 
 1.
