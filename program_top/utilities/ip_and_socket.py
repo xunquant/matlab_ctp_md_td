@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import os,socket,fcntl,struct
+import os,socket,fcntl,struct,psutil
 
 def isInuseWindow(port):
     if os.popen('netstat -an | findstr :' + str(port)).readlines():
@@ -41,11 +41,33 @@ def get_ip_of_a_net_adapter_in_linux(device_name):
 	return socket.inet_ntoa(fcntl.ioctl(s.fileno(), 0x8915, # SIOCGIFADDR
 		struct.pack('256s', device_name[:15]))[20:24])
 
+def get_active_nic_name():
+	'''取得本机对外活跃的网卡名称'''
+	all_nic=psutil.net_if_stats()#取得本机所有网卡名称
+	nic_names=all_nic.keys()
+	
+	try:
+		all_nic.pop('docker0')
+	except:
+		pass
+	
+	try:
+		all_nic.pop('lo')
+	except:
+		pass
+	
+	return all_nic
+	pass
+
 def get_local_ip(platform_category):
 	'''
 	取得本机IP地址
 	'''
-
+	
+	nic_dict=get_active_nic_name()
+	
+	major_nic_name=nic_dict.keys()[0]
+	
 	if platform_category.__contains__('windows'):#如果是windows，未完成
 		host_name=socket.gethostname()
 		my_host_name=socket.getfqdn()
@@ -54,13 +76,10 @@ def get_local_ip(platform_category):
 		my_local_ip=socket.gethostbyname(my_host_name)
 	else:#linux系统
 		try:
-			my_local_ip=get_ip_of_a_net_adapter_in_linux('eth0')#此处指定硬网卡的设备名称,如果叫做eth0
+			my_local_ip=get_ip_of_a_net_adapter_in_linux(major_nic_name)#此处指定硬网卡的设备名称,如果叫做eth0
 		except:
-			try:
-				my_local_ip=get_ip_of_a_net_adapter_in_linux('p4p1')#此处指定硬网卡的设备名称,如果叫做p4p1
-			except:
-				my_local_ip='请注意检查网卡在本机的名称，并在源代码中添加'
-				print my_local_ip
+			my_local_ip='请注意检查网卡在本机的名称，并在源代码中添加'
+			print my_local_ip
 		pass
 	return my_local_ip
 	pass

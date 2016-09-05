@@ -194,12 +194,9 @@ class CtpMdApi(MdApi):
     """CTP行情API实现"""
 
     #----------------------------------------------------------------------
-    def __init__(self, gateway):
+    def __init__(self):
         """Constructor"""
         super(CtpMdApi, self).__init__()
-        
-        self.gateway = gateway                  # gateway对象
-        self.gatewayName = gateway.gatewayName  # gateway对象名称
         
         self.reqID = EMPTY_INT              # 操作请求编号
         

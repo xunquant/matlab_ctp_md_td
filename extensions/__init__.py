@@ -22,8 +22,10 @@ def load_shared_objects():
 		relative_so_name=get_relative_filename_from_absolute(each_so)
 		symlinked_lib_name=project_path+sep+relative_so_name
 		
-		if path.isfile(symlinked_lib_name):#如果软链接文件存在，则删除之，确保文件夹移动以后，指向原先位置的链接被删除
+		try:#无论软链接是否存在，都先删除之
 			remove(symlinked_lib_name)
+		except:
+			pass
 		
 		try:
 			symlink(each_so, symlinked_lib_name)#这里使用绝对地址的目标做链接

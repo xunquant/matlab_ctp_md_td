@@ -8,6 +8,13 @@ class ctp_md_forwarder(front_end_base):
 	ctp行情转发服务器实例
 	'''
 	
+	def __init__(self):
+		self.__md_instance=CtpMdApi()
+		
+		pass
+	
+	
+	
 	
 	
 	

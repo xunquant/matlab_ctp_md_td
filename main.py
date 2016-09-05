@@ -3,7 +3,6 @@ from os import path,environ
 
 if __name__ == '__main__':
 	
-	
 	current_env=environ
 	from program_top.utilities.process_and_main_function.main_function import main
 	from business_top.ctp_md_forwarder import ctp_md_forwarder
