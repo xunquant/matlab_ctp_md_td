@@ -7,10 +7,10 @@ def make_ever_dir(raw_path):
 	'''
 	无论如何创建这个文件夹
 	'''
-	target_path=raw_path
-	is_existing=os.path.exists(target_path)
-	if not is_existing:
-		os.makedirs(target_path)
+	try:
+		os.makedirs(raw_path)
+	except:
+		pass
 	pass
 
 def del_file_ever(target_file):
