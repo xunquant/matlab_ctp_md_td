@@ -2,24 +2,24 @@
 import os
 
 def isInuseWindow(port):
-    if os.popen('netstat -an | findstr :' + str(port)).readlines():
-        portIsUse = True
-        print '%d is inuse' % port
-    else:
-        portIsUse = False
-        print '%d is free' % port
-    return portIsUse
+	if os.popen('netstat -an | findstr :' + str(port)).readlines():
+		portIsUse = True
+		print '%d is inuse' % port
+	else:
+		portIsUse = False
+		print '%d is free' % port
+	return portIsUse
 
 def isInuseLinux(port):
-    #lsof -i:4906
-    #not show pid to avoid complex
-    if os.popen('netstat -na | grep :' + str(port)).readlines():
-        portIsUse = True
-        print '%d is inuse' % port
-    else:
-        portIsUse = False
-        print '%d is free' % port
-    return portIsUse
+	#lsof -i:4906
+	#not show pid to avoid complex
+	if os.popen('netstat -na | grep :' + str(port)).readlines():
+		portIsUse = True
+		print '%d is inuse' % port
+	else:
+		portIsUse = False
+		print '%d is free' % port
+	return portIsUse
 
 def scan_available_ports_then_return(platform_category):
 	'''

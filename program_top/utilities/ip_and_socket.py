@@ -2,11 +2,11 @@
 import os,socket,fcntl,struct,psutil
 
 def isInuseWindow(port):
-    if os.popen('netstat -an | findstr :' + str(port)).readlines():
-        portIsUse = True
-    else:
-        portIsUse = False
-    return portIsUse
+	if os.popen('netstat -an | findstr :' + str(port)).readlines():
+		portIsUse = True
+	else:
+		portIsUse = False
+	return portIsUse
 
 def isInuseLinux(port):
 	#lsof -i:4906
