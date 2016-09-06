@@ -86,6 +86,10 @@ class VtGateway(object):
 	def onLog(self, log):
 		"""日志推送"""
 		# 通用事件
+		
+		import pydevd
+		
+		
 		event1 = Event(type_=EVENT_LOG)
 		event1.dict_['data'] = log
 		self.binding_instance.put(event1)

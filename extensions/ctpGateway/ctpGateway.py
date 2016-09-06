@@ -9,6 +9,7 @@ vtSymbol直接使用symbol
 
 import os
 from copy import copy
+from program_top.utilities.debugging import callback_debug_start
 
 from vnctpmd import MdApi
 from vnctptd import TdApi
@@ -93,9 +94,6 @@ class CtpMdApi(MdApi):
 		#log.gatewayName = self.gatewayName
 		print '行情服务器连接成功'
 		#self.gateway.onLog(log)
-		k=9
-		print k
-		
 		self.login()
 	
 	#----------------------------------------------------------------------
@@ -129,14 +127,13 @@ class CtpMdApi(MdApi):
 	def onRspUserLogin(self, data, error, n, last):
 		"""登陆回报"""
 		# 如果登录成功，推送日志信息
+		
+		#callback_debug_start()
+		
 		if error['ErrorID'] == 0:
 			self.loginStatus = True
 			self.gateway.mdConnected = True
-			
-			log = VtLogData()
-			log.gatewayName = self.gatewayName
-			log.logContent = u'行情服务器登录完成'
-			self.gateway.onLog(log)
+			print('行情服务器登录完成')
 			
 			# 重新订阅之前订阅的合约
 			for subscribeReq in self.subscribedSymbols:
@@ -270,6 +267,9 @@ class CtpMdApi(MdApi):
 	def login(self):
 		"""登录"""
 		# 如果填入了用户名密码等，则登录
+		
+		#callback_debug_start()
+		
 		if self.userID and self.password and self.brokerID:
 			req = {}
 			req['UserID'] = self.userID
@@ -277,6 +277,12 @@ class CtpMdApi(MdApi):
 			req['BrokerID'] = self.brokerID
 			self.reqID += 1
 			self.reqUserLogin(req, self.reqID)
+		
+		
+		
+		
+		pass
+		
 	
 	#----------------------------------------------------------------------
 	def close(self):

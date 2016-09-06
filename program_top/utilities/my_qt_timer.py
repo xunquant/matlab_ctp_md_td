@@ -4,9 +4,25 @@ from PyQt4.QtCore import QTimer,Qt
 
 from datetime import datetime
 
-class my_timer(QTimer):
+class my_zmq_timer(object):
+	'''
+	根据zeromq的delayed_callback设计的定时器类
+	'''
+	def __init__(self,first_emit_moment=None,emit_interval=None,emit_function=None):
+		'''
+		首次调用时间：如果不指明，则一构造完毕就立即调用一次，如果指明，则必须为构造之后的某个时点，类型是datetime
+		调用时间间隔：如果不指明，则为单次调用，以后再也不调用，如果指明，则每隔此时常调用一次，类型是timedelta
+		调用函数：
+		'''
+		
+	
+	
+	pass
+
+
+class my_qt_timer(QTimer):
 	def __init__(self,timeout_moment=None,timeout_task=None,repeat_interval=None,**kwargs):
-		super(my_timer, self).__init__()
+		super(my_qt_timer, self).__init__()
 
 		self.__on_time_task=timeout_task
 		self._arguments=kwargs
