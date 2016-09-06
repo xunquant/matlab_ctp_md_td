@@ -13,7 +13,8 @@ trading_day_closing_complete_time=datetime.time(20,00,00)
 derby_elasticsearch_date_format='%Y%m%d'#elasticsearch日期格式
 derby_perflog_timestamp_format='%Y-%m-%d-%H:%M:%S.%f-%Z'#年月日时分秒
 
-def utc_float2datetime(utc_float_time):
+def posix_timestamp2datetime(utc_float_time):
+	'''输入utc_posix时间戳，返回本机所在时区的datetime时间'''
 	int_utc_sec=int(utc_float_time)
 	millisec_float=int(1000*(utc_float_time-int_utc_sec))
 	time_t=time.localtime(int_utc_sec)
@@ -46,3 +47,24 @@ def get_same_day_in_next_n_month(target_date=datetime.datetime.today().date(),n=
 	else:
 		return datetime.date(new_year,new_month,1)
 
+def datetime2posix_timestamp(target_datetime,time_zone=None):
+	'''输入datetime，如果指定时区以该时区来理解datetime，如果没有指定时区，以datetime自带的时区信息解析，如果两个时区信息都没有，以本机所在时区解析
+	然后将datetime转化为unix秒时间戳
+	'''
+	microsecond_part=target_datetime.microsecond
+	time_tuple=target_datetime.timetuple()
+	int_part=time.mktime(time_tuple)
+	float_part=0.000001*microsecond_part
+	posix_time=int_part+float_part
+	return posix_time
+	
+	'''
+	restored_dt=datetime.datetime.utcfromtimestamp(posix_time)
+	restored_dt_2=datetime.datetime.fromtimestamp(posix_time)
+	restored_dt_3=posix_timestamp2datetime(posix_time)
+	'''
+	
+	
+	
+	
+	pass

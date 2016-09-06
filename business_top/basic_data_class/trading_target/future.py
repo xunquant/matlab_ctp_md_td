@@ -59,7 +59,7 @@ def get_contract_volume_series(contract_code,start_date=datetime.today().date(),
 
 	data_panel=pandas.DataFrame(current_data_series)
 	time_stamps=data_panel['utc_time']
-	new_timestamps=time_stamps.apply(my_datetime.utc_float2datetime)
+	new_timestamps=time_stamps.apply(my_datetime.posix_timestamp2datetime)
 	data_panel.set_index(new_timestamps,inplace=True)
 	return_data=data_panel['volume']
 	return return_data

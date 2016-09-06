@@ -32,7 +32,7 @@ class my_tick(basic_single_slice_data):
 			self.b1_price=gm_tick.bids[0][0]
 			pass
 
-		self.current_tick_moment=my_datetime.utc_float2datetime(gm_tick.utc_time)
+		self.current_tick_moment=my_datetime.posix_timestamp2datetime(gm_tick.utc_time)
 		pass
 	pass
 
