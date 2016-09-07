@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bc55be6-a7d9-48f5-9442-c8f112362e2c" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/program_top/utilities/my_qt_timer.py" afterPath="$PROJECT_DIR$/program_top/utilities/my_timer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/CTP/TradingDay.con" afterPath="$PROJECT_DIR$/temp/CTP/TradingDay.con" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/business_top/basic_data_class/basic_single_slice_data/my_bar.py" afterPath="$PROJECT_DIR$/business_top/basic_data_class/basic_single_slice_data/my_bar.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/business_top/basic_data_class/basic_single_slice_data/my_tick.py" afterPath="$PROJECT_DIR$/business_top/basic_data_class/basic_single_slice_data/my_tick.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/business_top/basic_data_class/trading_target/future.py" afterPath="$PROJECT_DIR$/business_top/basic_data_class/trading_target/future.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/business_top/ctp_md_forwarder/__init__.py" afterPath="$PROJECT_DIR$/business_top/ctp_md_forwarder/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/program_top/utilities/my_datetime.py" afterPath="$PROJECT_DIR$/program_top/utilities/my_datetime.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/program_top/utilities/debugging.py" afterPath="$PROJECT_DIR$/program_top/utilities/debugging.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/program_top/utilities/my_timer.py" afterPath="$PROJECT_DIR$/program_top/utilities/my_timer.py" />
     </list>
     <ignored path="matlab_ctp_md_td.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,10 +28,10 @@
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/business_top/ctp_md_forwarder/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+            <state relative-caret-position="298">
+              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
               <folding>
-                <element signature="e#769#805#0" expanded="true" />
+                <element signature="e#404#604#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -44,27 +40,18 @@
       <file leaf-file-name="my_timer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/program_top/utilities/my_timer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+            <state relative-caret-position="216">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
               <folding>
-                <element signature="e#275#317#1" expanded="true" />
-                <element signature="e#1332#1454#0" expanded="true" />
-                <element signature="e#1488#1645#0" expanded="true" />
-                <element signature="e#1781#2533#0" expanded="true" />
-                <element signature="e#2563#2720#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="my_datetime.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/program_top/utilities/my_datetime.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding>
-                <element signature="e#741#1076#0" expanded="true" />
-                <element signature="e#2065#2585#0" expanded="true" />
+                <element signature="e#292#1702#0" expanded="false" />
+                <element signature="e#292#334#1" expanded="true" />
+                <element signature="e#453#1099#0" expanded="true" />
+                <element signature="e#1147#1273#0" expanded="true" />
+                <element signature="e#1306#1423#0" expanded="true" />
+                <element signature="e#1452#1696#0" expanded="true" />
+                <element signature="e#1732#2767#0" expanded="false" />
+                <element signature="e#1822#2574#0" expanded="true" />
+                <element signature="e#2604#2761#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,8 +60,8 @@
       <file leaf-file-name="ctp_gateway_new.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/business_top/ctp_md_forwarder/ctp_gateway_new.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="23" />
+            <state relative-caret-position="-480">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="e#404#717#0" expanded="true" />
                 <element signature="e#819#1227#0" expanded="true" />
@@ -86,7 +73,7 @@
       <file leaf-file-name="ctpGateway.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/extensions/ctpGateway/ctpGateway.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
+            <state relative-caret-position="168">
               <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
                 <element signature="e#19#97#1" expanded="true" />
@@ -210,8 +197,8 @@
       <file leaf-file-name="debugging.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/program_top/utilities/debugging.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+            <state relative-caret-position="312">
+              <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
               <folding>
                 <element signature="e#25#35#1" expanded="true" />
               </folding>
@@ -293,13 +280,13 @@
         <option value="$PROJECT_DIR$/business_top/ctp_md_forwarder/ctp_md_api_spi.py" />
         <option value="$PROJECT_DIR$/extensions/ctpGateway/vtGateway.py" />
         <option value="$PROJECT_DIR$/business_top/ctp_md_forwarder/vt_gateway_new.py" />
-        <option value="$PROJECT_DIR$/program_top/utilities/debugging.py" />
         <option value="$PROJECT_DIR$/extensions/ctpGateway/ctpGateway.py" />
         <option value="$PROJECT_DIR$/business_top/ctp_md_forwarder/ctp_gateway_new.py" />
         <option value="$PROJECT_DIR$/program_top/utilities/my_qt_timer.py" />
-        <option value="$PROJECT_DIR$/business_top/ctp_md_forwarder/__init__.py" />
-        <option value="$PROJECT_DIR$/program_top/utilities/my_timer.py" />
         <option value="$PROJECT_DIR$/program_top/utilities/my_datetime.py" />
+        <option value="$PROJECT_DIR$/program_top/utilities/debugging.py" />
+        <option value="$PROJECT_DIR$/program_top/utilities/my_timer.py" />
+        <option value="$PROJECT_DIR$/business_top/ctp_md_forwarder/__init__.py" />
       </list>
     </option>
   </component>
@@ -339,6 +326,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -392,7 +380,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -666,7 +653,14 @@
       <option name="project" value="LOCAL" />
       <updated>1473141140552</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="定时器使用ioloop的函数来设置，完成时间戳和datetime转换。">
+      <created>1473158371977</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1473158371977</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -684,15 +678,15 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21423538" sideWeight="0.5322196" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.4947146" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41904762" sideWeight="0.50528544" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32789117" sideWeight="0.4947146" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32789117" sideWeight="0.516561" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32789117" sideWeight="0.48343903" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.49753347" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.49753347" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.49753347" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21545003" sideWeight="0.46778044" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41904762" sideWeight="0.70542634" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41904762" sideWeight="0.6948555" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -722,16 +716,12 @@
     <MESSAGE value="软链接每次自动删除并重建，主网卡名称自动取得，并获取其IP" />
     <MESSAGE value="增加模拟行情服务器的配置文件，在CTP_gateway中连接之" />
     <MESSAGE value="终于解决了回调函数的断点问题，行情服务器登录成功，下一步做一个定时器，保证服务器程序定时在每次开盘前连接CTP行情。" />
-    <option name="LAST_COMMIT_MESSAGE" value="终于解决了回调函数的断点问题，行情服务器登录成功，下一步做一个定时器，保证服务器程序定时在每次开盘前连接CTP行情。" />
+    <MESSAGE value="定时器使用ioloop的函数来设置，完成时间戳和datetime转换。" />
+    <option name="LAST_COMMIT_MESSAGE" value="定时器使用ioloop的函数来设置，完成时间戳和datetime转换。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/program_top/utilities/my_timer.py</url>
-          <line>34</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/program_top/utilities/my_datetime.py</url>
           <line>69</line>
@@ -745,28 +735,11 @@
           </selected-grouping-rules>
         </breakpoints-dialog>
       </breakpoints-dialog>
-      <option name="time" value="47" />
+      <option name="time" value="48" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/business_top/ctp_md_forwarder/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding>
-            <element signature="e#769#805#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/program_top/components/standalone_working_class/working_type_base/front_end_base/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -1097,16 +1070,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/program_top/utilities/process_and_main_function/main_function.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-          <folding>
-            <element signature="e#200#594#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/bin/anaconda2/lib/python2.7/site-packages/zmq/sugar/poll.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -1114,67 +1077,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business_top/ctp_md_forwarder/vt_gateway_new.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="84" column="18" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="18" />
-          <folding>
-            <element signature="e#2457#2600#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/program_top/utilities/debugging.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding>
-            <element signature="e#25#35#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/bin/anaconda2/lib/python2.7/site-packages/tornado/platform/twisted.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="391" column="14" selection-start-line="391" selection-start-column="14" selection-end-line="391" selection-end-column="14" />
-          <folding>
-            <element signature="e#17460#18056#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business_top/ctp_md_forwarder/ctp_gateway_new.py">
+    <entry file="file://$USER_HOME$/.PyCharm2016.2/system/python_stubs/-1198109818/time.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="23" />
-          <folding>
-            <element signature="e#404#717#0" expanded="true" />
-            <element signature="e#819#1227#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="276">
+          <caret line="155" column="7" selection-start-line="155" selection-start-column="7" selection-end-line="155" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/bin/anaconda2/lib/python2.7/site-packages/tornado/ioloop.py">
+    <entry file="file://$PROJECT_DIR$/program_top/utilities/my_datetime.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="962" column="0" selection-start-line="962" selection-start-column="0" selection-end-line="962" selection-end-column="0" />
+        <state relative-caret-position="336">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="e#1895#24700#0" expanded="false" />
-            <element signature="e#24733#38069#0" expanded="false" />
-            <element signature="e#38100#39085#0" expanded="false" />
-            <element signature="e#39124#41264#0" expanded="false" />
-            <element signature="e#39124#39663#1" expanded="false" />
-            <element signature="e#39735#40028#0" expanded="false" />
-            <element signature="e#40596#40827#0" expanded="false" />
-            <element signature="e#40867#41264#0" expanded="false" />
+            <element signature="e#741#1076#0" expanded="false" />
+            <element signature="e#2065#2585#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/extensions/ctpGateway/ctpGateway.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
+        <state relative-caret-position="168">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
             <element signature="e#19#97#1" expanded="true" />
@@ -1294,11 +1225,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2016.2/system/python_stubs/-1198109818/time.py">
+    <entry file="file://$PROJECT_DIR$/business_top/ctp_md_forwarder/vt_gateway_new.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="155" column="7" selection-start-line="155" selection-start-column="7" selection-end-line="155" selection-end-column="7" />
-          <folding />
+        <state relative-caret-position="624">
+          <caret line="84" column="18" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="18" />
+          <folding>
+            <element signature="e#2457#2600#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1310,6 +1243,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/program_top/utilities/process_and_main_function/main_function.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding>
+            <element signature="e#200#594#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program_top/utilities/debugging.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding>
+            <element signature="e#25#35#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2016.2/system/python_stubs/-1198109818/datetime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="276" column="12" selection-start-line="276" selection-start-column="12" selection-end-line="276" selection-end-column="12" />
+          <folding>
+            <element signature="e#9707#9711#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/bin/anaconda2/lib/python2.7/site-packages/zmq/eventloop/minitornado/ioloop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="1037" column="19" selection-start-line="1037" selection-start-column="19" selection-end-line="1037" selection-end-column="19" />
+          <folding>
+            <element signature="e#39210#39749#1" expanded="true" />
+            <element signature="e#39821#40114#0" expanded="true" />
+            <element signature="e#40145#40276#0" expanded="true" />
+            <element signature="e#40306#40484#0" expanded="true" />
+            <element signature="e#40520#40652#0" expanded="true" />
+            <element signature="e#40682#40913#0" expanded="true" />
+            <element signature="e#40953#41350#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/bin/anaconda2/lib/python2.7/site-packages/tornado/ioloop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-349">
+          <caret line="469" column="8" selection-start-line="469" selection-start-column="8" selection-end-line="469" selection-end-column="8" />
+          <folding>
+            <element signature="e#16735#18313#0" expanded="true" />
+            <element signature="e#18917#19474#0" expanded="true" />
+            <element signature="e#24733#38069#0" expanded="false" />
+            <element signature="e#38100#39085#0" expanded="false" />
+            <element signature="e#39124#41264#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_bundle/pydev_monkey_qt.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
@@ -1318,37 +1311,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/program_top/utilities/my_timer.py">
+    <entry file="file://$PROJECT_DIR$/business_top/ctp_md_forwarder/ctp_gateway_new.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+        <state relative-caret-position="-480">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="e#275#317#1" expanded="true" />
-            <element signature="e#1332#1454#0" expanded="true" />
-            <element signature="e#1488#1645#0" expanded="true" />
-            <element signature="e#1781#2533#0" expanded="true" />
-            <element signature="e#2563#2720#0" expanded="true" />
+            <element signature="e#404#717#0" expanded="true" />
+            <element signature="e#819#1227#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/program_top/utilities/my_datetime.py">
+    <entry file="file://$PROJECT_DIR$/program_top/utilities/my_timer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="216">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
           <folding>
-            <element signature="e#741#1076#0" expanded="true" />
-            <element signature="e#2065#2585#0" expanded="true" />
+            <element signature="e#292#1702#0" expanded="false" />
+            <element signature="e#292#334#1" expanded="true" />
+            <element signature="e#453#1099#0" expanded="true" />
+            <element signature="e#1147#1273#0" expanded="true" />
+            <element signature="e#1306#1423#0" expanded="true" />
+            <element signature="e#1452#1696#0" expanded="true" />
+            <element signature="e#1732#2767#0" expanded="false" />
+            <element signature="e#1822#2574#0" expanded="true" />
+            <element signature="e#2604#2761#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/business_top/ctp_md_forwarder/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        <state relative-caret-position="298">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
           <folding>
-            <element signature="e#769#805#0" expanded="true" />
+            <element signature="e#404#604#0" expanded="true" />
           </folding>
         </state>
       </provider>
