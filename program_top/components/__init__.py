@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+import yaml
 
 class component_base(object):
 	'''
@@ -12,9 +13,24 @@ class component_base(object):
 			self._environment_pack=parrent_instance._environment_pack
 		self.__event_dict={}#储存事件类别和对应处理消息的函数的字典
 		pass
+	
+	def _output_log(self,log_message):
+		
+		
+		print log_message
+		
+		pass
+	
 
-	def request_in(self,command_to_component):
+	def _request_in(self, command_to_component):
 		'''对本组件的事件入口，必须重载才能调用'''
+		try:
+			message_content=yaml.safe_load(command_to_component)
+		except Exception, current_error:
+			print current_error.__repr__()
+			return
+			pass
+		
 		event_type=command_to_component['event_type']
 
 		if self.__event_dict.__contains__(event_type):

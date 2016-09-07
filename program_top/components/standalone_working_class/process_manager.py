@@ -13,11 +13,6 @@ class process_manager(standalone_working_class):
 		self._inform_ready()
 		pass
 
-	def request_in(self, event_in):
-		'''事件入口'''
-
-		pass
-
 	def _inform_ready(self):
 		'''当自己的初始化完成后，调用此函数，发现自己是进程经理，就把IP和端口号保存在内存，并且存入本地硬盘，以后其他类生成就从这个IP和端口读取，然后调用父类同名函数，通知自己，自己已经注册'''
 

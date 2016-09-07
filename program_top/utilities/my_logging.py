@@ -2,6 +2,9 @@
 
 import datetime,logging,time
 
+
+
+
 class my_logging_format(logging.Formatter):#我的日志时间格式，包含毫秒
 	def formatTime(self, record, datefmt=None):
 

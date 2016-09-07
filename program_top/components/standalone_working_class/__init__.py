@@ -25,8 +25,7 @@ class standalone_working_class(component_base):
 	def __port_and_loop_initilisation(self):
 		'''端口和消息循环入口初始化'''
 		port_for_listening=scan_available_ports_then_return(self._environment_pack['current_platform_info']['current_system_category'])
-
-		self._io_gateway=zmq_io_gateway(port_for_listening, self.request_in, self)
+		self._io_gateway=zmq_io_gateway(port_for_listening, self._request_in, self)
 		self._io_gateway.listening_port=port_for_listening
 		pass
 

@@ -1,6 +1,6 @@
 ﻿#-*-coding:utf-8-*-
 
-import os, json
+import os, json,yaml
 from program_top import utilities
 from pandas import DataFrame
 
@@ -20,13 +20,11 @@ def read_csv_into_paterns(absolute_csv_filename,pattern):
 		return[]
 	pass
 
-
-
 def temperarily_load_a_local_json(json_filename):
 	loaded_content=None
 	try:
 		with open(json_filename,'r')as file_struct:
-			loaded_content=json.loads(file_struct.read())
+			loaded_content=yaml.safe_load(file_struct.read())
 			pass
 
 	except Exception,current_error:
