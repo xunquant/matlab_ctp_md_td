@@ -18,8 +18,8 @@ class my_zmq_timer(object):
 		时间到时调用函数：emit_function，调用此函数的参数
 		'''
 		self.establish_moment=datetime.now()#定时器创建完成时间
-		#print '定时器构造时刻:',self.establish_moment
-		#self.next_emit_moment=first_emit_moment
+		print '定时器构造时刻:',self.establish_moment
+		self.next_emit_moment=first_emit_moment
 		print '首次调用时刻:', self.next_emit_moment
 		
 		self.emit_interval=emit_interval
@@ -49,15 +49,17 @@ class my_zmq_timer(object):
 		
 	def __time_out(self):
 		'''时间到，调用函数'''
-		#print '调用时刻:',datetime.now()
+		
+		if self.emit_interval:#如果指定了调用周期，则设定下次调用，否则调用一次就结束
+			self.__set_next_call()
+		pass
+		
 		if self.function_parameter:
 			self.emit_function(self.function_parameter)
 		else:
 			self.emit_function()
 		
-		if self.emit_interval:#如果指定了调用周期，则设定下次调用，否则调用一次就结束
-			self.__set_next_call()
-		pass
+
 	pass
 
 class my_qt_timer(QTimer):

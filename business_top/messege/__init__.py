@@ -9,7 +9,6 @@ subscribe={"event_type":"subscribe",#消息类别
 		   "strategy_machine":{'ip':"","port":""},#订阅者
 		   "target_instrument":['ag1612','SR701']}#订阅的合约
 
-
 unsubscribe={"event_type":"unsubscribe",
 		   "strategy_name":"",
 		   "strategy_machine":{'ip':"","port":""},

@@ -29,15 +29,17 @@ class zmq_send_connection(object):
 		self.__current_connection=None
 
 	def connect(self,target_address,target_port):
-		self.__socket.connect("tcp://%s:%d"%(target_address, target_port))
+		address="tcp://%s:%d"%(target_address, target_port)
+		self.__socket.connect(address)
 		pass
 
 	def dis_connect(self, target_address, target_port):
-		self.__socket.disconnect("tcp://%s:%d"%(target_address, target_port))
+		address="tcp://%s:%d"%(target_address, target_port)
+		self.__socket.disconnect(address)
 		pass
 
 	def send(self,json_content):
-		self.__socket.send_json(json_content)
+		self.__socket.send(json_content)
 		pass
 	pass
 
@@ -52,6 +54,7 @@ class zmq_io_gateway(component_base):
 		'''
 		super(zmq_io_gateway, self).__init__(binding_instance)
 		self.sender=zmq_send_connection()
+		self.sender.connect('192.168.1.199', 31416)
 		platform_category=binding_instance._environment_pack['current_platform_info']['current_system_category']
 		self.lan_ip=get_local_ip(platform_category)
 
@@ -62,9 +65,11 @@ class zmq_io_gateway(component_base):
 	def pulse_send(self,target_ip,target_port,json_to_send):
 		'''
 		脉冲发送，发完就断开
-		till here
+		
 		'''
-
+		
+		self.sender.send(json_to_send)
+		#self.sender.dis_connect(target_ip,target_port)
 		pass
 
 	def loop_sending(self,target_ip,target_port,json_to_send):
